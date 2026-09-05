@@ -1,0 +1,51 @@
+@model List<StudentListItem>
+@{
+    ViewData["Title"] = "Student List";
+}
+
+<h2>Registered Students</h2>
+
+<form asp-controller="Student" asp-action="List" method="get" class="form-group">
+    <label for="search">Search (name or student id)</label>
+    <input type="text" id="search" name="search" value="@ViewBag.Search" />
+    <button type="submit" class="btn btn-small">Search</button>
+</form>
+
+@if (Model.Count == 0)
+{
+    <p>No students found.</p>
+}
+else
+{
+    <table>
+        <thead>
+            <tr>
+                <th>Student Id</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Qualifications</th>
+                <th>Registered On</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (StudentListItem s in Model)
+            {
+                <tr>
+                    <td>@s.StudentCode</td>
+                    <td>@s.FirstName @s.LastName</td>
+                    <td>@s.Age</td>
+                    <td>@s.Gender</td>
+                    <td>@s.Email</td>
+                    <td>@s.Phone</td>
+                    <td>@s.QualificationCount</td>
+                    <td>@s.CreatedDate.ToString("dd-MMM-yyyy")</td>
+                    <td><a asp-controller="Student" asp-action="Details" asp-route-id="@s.StudentId">View</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

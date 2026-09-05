@@ -1,0 +1,15 @@
+C:\Users\SHAH\Documents\.net\mvc\SchoolHub\SchoolMgmtSystem.DAL\bin\Debug\net9.0\SchoolMgmtSystem.DAL.deps.json
+C:\Users\SHAH\Documents\.net\mvc\SchoolHub\SchoolMgmtSystem.DAL\bin\Debug\net9.0\SchoolMgmtSystem.DAL.dll
+C:\Users\SHAH\Documents\.net\mvc\SchoolHub\SchoolMgmtSystem.DAL\bin\Debug\net9.0\SchoolMgmtSystem.DAL.pdb
+C:\Users\SHAH\Documents\.net\mvc\SchoolHub\SchoolMgmtSystem.DAL\bin\Debug\net9.0\SchoolMgmtSystem.Models.dll
+C:\Users\SHAH\Documents\.net\mvc\SchoolHub\SchoolMgmtSystem.DAL\bin\Debug\net9.0\SchoolMgmtSystem.Models.pdb
+C:\Users\SHAH\Documents\.net\mvc\SchoolHub\SchoolMgmtSystem.DAL\obj\Debug\net9.0\SchoolMgmtSystem.DAL.csproj.AssemblyReference.cache
+C:\Users\SHAH\Documents\.net\mvc\SchoolHub\SchoolMgmtSystem.DAL\obj\Debug\net9.0\SchoolMgmtSystem.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SHAH\Documents\.net\mvc\SchoolHub\SchoolMgmtSystem.DAL\obj\Debug\net9.0\SchoolMgmtSystem.DAL.AssemblyInfoInputs.cache
+C:\Users\SHAH\Documents\.net\mvc\SchoolHub\SchoolMgmtSystem.DAL\obj\Debug\net9.0\SchoolMgmtSystem.DAL.AssemblyInfo.cs
+C:\Users\SHAH\Documents\.net\mvc\SchoolHub\SchoolMgmtSystem.DAL\obj\Debug\net9.0\SchoolMgmtSystem.DAL.csproj.CoreCompileInputs.cache
+C:\Users\SHAH\Documents\.net\mvc\SchoolHub\SchoolMgmtSystem.DAL\obj\Debug\net9.0\SchoolMg.C0B2F0F6.Up2Date
+C:\Users\SHAH\Documents\.net\mvc\SchoolHub\SchoolMgmtSystem.DAL\obj\Debug\net9.0\SchoolMgmtSystem.DAL.dll
+C:\Users\SHAH\Documents\.net\mvc\SchoolHub\SchoolMgmtSystem.DAL\obj\Debug\net9.0\refint\SchoolMgmtSystem.DAL.dll
+C:\Users\SHAH\Documents\.net\mvc\SchoolHub\SchoolMgmtSystem.DAL\obj\Debug\net9.0\SchoolMgmtSystem.DAL.pdb
+C:\Users\SHAH\Documents\.net\mvc\SchoolHub\SchoolMgmtSystem.DAL\obj\Debug\net9.0\ref\SchoolMgmtSystem.DAL.dll
