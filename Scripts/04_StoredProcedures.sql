@@ -1,5 +1,12 @@
 USE SchoolMgmtSystemDB;
 GO
+
+IF OBJECT_ID('dbo.InsertStudent', 'P') IS NOT NULL DROP PROCEDURE dbo.InsertStudent;
+GO
+
+SET ANSI_NULLS ON;
+SET QUOTED_IDENTIFIER ON;
+GO
 CREATE PROCEDURE dbo.InsertStudent
 (
     @FirstName      NVARCHAR(50),
@@ -65,6 +72,9 @@ BEGIN
     COMMIT TRANSACTION;
 END
 GO
+
+IF OBJECT_ID('dbo.GetAllStudents', 'P') IS NOT NULL DROP PROCEDURE dbo.GetAllStudents;
+GO
 CREATE PROCEDURE dbo.GetAllStudents
 AS
 BEGIN
@@ -78,6 +88,8 @@ BEGIN
 END
 GO
 
+IF OBJECT_ID('dbo.GetStudentById', 'P') IS NOT NULL DROP PROCEDURE dbo.GetStudentById;
+GO
 CREATE PROCEDURE dbo.GetStudentById
 (
     @StudentId INT
@@ -98,6 +110,9 @@ BEGIN
     WHERE StudentId = @StudentId
     ORDER BY QualificationId;
 END
+GO
+
+IF OBJECT_ID('dbo.ValidateLogin', 'P') IS NOT NULL DROP PROCEDURE dbo.ValidateLogin;
 GO
 CREATE PROCEDURE dbo.ValidateLogin
 (

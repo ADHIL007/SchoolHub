@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Mvc;
 using SchoolMgmtSystem.BLL;
 using SchoolMgmtSystem.Models;
 using SchoolMgmtSystem.ViewModels;
-using System.Diagnostics;
 
 namespace SchoolMgmtSystem.Controllers;
 
@@ -33,11 +32,6 @@ public class StudentController : Controller
             return View(model);
         }
 
-        System.Diagnostics.Debug.WriteLine("Hit the post action");
-
-        // var temp = model.Age;
-
-
         Student student = new Student();
         student.FirstName = model.FirstName;
         student.LastName = model.LastName;
@@ -57,8 +51,8 @@ public class StudentController : Controller
                 {
                     CourseName = q.CourseName,
                     University = q.University,
-                    PassingYear = q.PassingYear,
-                    Percentage = q.Percentage
+                    PassingYear = q.PassingYear!.Value,
+                    Percentage = q.Percentage!.Value
                 });
             }
         }

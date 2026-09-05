@@ -5,6 +5,7 @@ $(document).ready(function () {
         var newRow = lastRow.clone();
 
         newRow.find("input").val("");
+        newRow.find("span[data-valmsg-for]").empty();
 
         $("#qualificationsBody").append(newRow);
         reindexRows();
@@ -23,13 +24,19 @@ $(document).ready(function () {
 
     function reindexRows() {
         $("#qualificationsBody tr").each(function (index) {
-            console.log("reindexing row " + index);
             $(this).find("input").each(function () {
                 var name = $(this).attr("name");
                 if (name) {
-                    // var newName = name.replace("Qualifications[0]", "Qualifications[" + index + "]");
                     var newName = name.replace(/Qualifications\[\d+\]/, "Qualifications[" + index + "]");
                     $(this).attr("name", newName);
+                }
+            });
+
+            $(this).find("span[data-valmsg-for]").each(function () {
+                var target = $(this).attr("data-valmsg-for");
+                if (target) {
+                    var newTarget = target.replace(/Qualifications\[\d+\]/, "Qualifications[" + index + "]");
+                    $(this).attr("data-valmsg-for", newTarget);
                 }
             });
         });
